@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="#" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="#">
     <title>Scandi</title>
 </head>
 <body>
@@ -11,23 +14,37 @@
         <nav class="main-header-nav">
             <a href="#"><img src="img/logo.svg" width="91" height="25" alt="логотип компании"></a>
             <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="blank.html">О компании</a></li>
-                <li class="site-navigation-item"><a href="blank.html">Портфолио</a></li>
-                <li class="site-navigation-item"><a href="blank.html">Команда</a></li>
-                <li class="site-navigation-item"><a href="blank.html">Как мы работаем</a></li>
-                <li class="site-navigation-item"><a href="blank.html">Отзывы клиентов</a></li>
-                <li class="site-navigation-item"><a href="blank.html">Оставить заявку</a></li>
-                <li class="site-navigation-item"><a href="tel:+7(981)857-46-24">+7 (981) 857-46-24</a></li>
+                <li class="site-navigation-item">
+                    <a href="blank.html">О компании</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="blank.html">Портфолио</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="blank.html">Команда</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="blank.html">Как мы работаем</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="blank.html">Отзывы клиентов</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="blank.html">Оставить заявку</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="tel:+7(981)857-46-24">+7 (981) 857-46-24</a>
+                </li>
             </ul>
         </nav>
-    </header>
-    <main>
-       <img src="img/main.jpg" width="1417" height="715" alt="красивый интрерьер">
+        <img src="img/main.jpg" width="1417" height="715" alt="красивый интрерьер">
        <h1 class="heading">Поможем сделать вашу квартиру уютнее</h1>
        <p>Подбираем текстиль, мебель и аксессуары
         под ваш интерьер, находим магазины
         и помогаем организовать доставку</p>
         <a href="#">Оставить заявку</a>
+    </header>
+    <main>
        <section class="about">
         <h2 class="headind-2">О нас</h2>
         <img src="img/aboutus.png" width="445" height="465" alt="интерьер со столовыми приборами">
@@ -38,9 +55,9 @@
             «Да! Это именно то, что действительно достойно моего дома!»
         </p>
             <ul class="advantages">
-                <li class="advantages-item">5 лет опыта</li>
-                <li class="advantages-item">100 проектов</li>
-                <li class="advantages-item">10 наград</li>
+                <li class="advantages-item"><span>5</span>лет опыта</li>
+                <li class="advantages-item"><span>100</span> проектов</li>
+                <li class="advantages-item"><span>10</span> наград</li>
             </ul>
        </section>
        <section class="portfolio">
@@ -97,7 +114,7 @@
        </section>
        <section class="reviews">
         <h2 class="headind-2">Отзывы</h2>
-        <img src="img/arrow1.png" width="72" height="72" alt="стрелка влево">
+        <button><img src="img/arrow1.png" width="72" height="72" alt="стрелка влево"></button>
         <p class="rewiev">
         «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
         Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. 
@@ -107,7 +124,7 @@
         </p>
         <img src="img/room.png" width="407" height="272" alt="интерьер-комната-отдыха">
         <img src="img/kitchen.png" width="407" height="272" alt="интерьер-кухня">
-        <img src="img/arrow2.png" width="72" height="72" alt="стрелка вправо">
+        <button><img src="img/arrow2.png" width="72" height="72" alt="стрелка вправо"></button>
        </section>
        <section class="request">
         <h2 class="headind-2">Оставить заявку</h2>
@@ -115,11 +132,18 @@
             Оставьте свои контакты. Менеджер перезвонит 
             в удобное вам время и ответит на все вопросы.
         </p>
-        
+        <form id="id-order">
+            <input type="text" name="name" value="Ваше имя">
+            <input type="tel" name="tel" value="Введите телефон">
+            <input type="submit" value="Оставить заявку">
+        </form>
+        <img src="img/map.png" width="590" height="624" alt="карта google">
        </section>
     </main>
     <footer class="main-footer">
-        <!--Подвал сайта-->
+        <a href="tel:+7(981)857-46-24">+7 (981) 857-46-24</a>
+        <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+        <p>ИП Королёва А.А.</p>
     </footer>
 </body>
 </html>
